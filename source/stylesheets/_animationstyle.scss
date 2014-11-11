@@ -1,0 +1,130 @@
+body {
+  background-color: #181759;
+}
+
+#animation-container{
+  padding-top: 20px;
+  margin: 0 auto;
+  overflow: hidden;
+  #animation-window{
+    border: 10px #fff solid;
+    margin: 0 auto;
+    background-image: url(https://s3.amazonaws.com/myfangate.com/brosafari/background.jpg);
+    height: 1170px;
+    width: 900px;
+  }
+}
+
+
+.dog,
+.title,
+.trash,
+.mc,
+.ufo,
+.ape,
+.crn,
+.etc,
+.craze,
+.thuglife,
+.pig{
+  position: relative;
+  cursor: pointer;
+}
+
+.dog{
+  top: 300px;
+  left: 510px;
+  width: 120px;
+  height: 130px;
+}
+
+.pig{
+  top: -3370px;
+  left: 210px;
+  width: 120px;
+  height: 130px;
+}
+
+.title{
+  background-image: url(https://s3.amazonaws.com/myfangate.com/brosafari/tourtitle.png);
+  width: 709px;
+  height: 263px;
+  margin-right: auto;
+  margin-left: auto;
+  top: 648px;
+  left: 20px;
+  z-index: 99;
+}
+
+.trash{
+  background-image: url(https://s3.amazonaws.com/myfangate.com/brosafari/trash.png);
+  z-index: 98;
+  width: 884px;
+  height: 148px;
+  left: 0;
+  top: 455px;
+  z-index: 98;
+}
+
+.mc{
+  background-image: url(https://s3.amazonaws.com/myfangate.com/brosafari/mc.png);
+  width: 138px;
+  height: 448px;
+  left: 725px;
+  top: -52px;
+  z-index: 97;
+}
+
+.ufo{
+  background-image: url(https://s3.amazonaws.com/myfangate.com/brosafari/ufo.png);
+  width: 150px;
+  height: 450px;
+  left: 604px;
+  top: -442px;
+  z-index: 96;
+}
+
+.ape{
+  background-image: url(https://s3.amazonaws.com/myfangate.com/brosafari/ape.png);
+  width: 164px;
+  height: 422px;
+  left: 501px;
+  top: -935px;
+  z-index: 95;
+}
+
+.crn{
+  background-image: url(https://s3.amazonaws.com/myfangate.com/brosafari/crn.png);
+  width: 141px;
+  height: 443px;
+  left: 232px;
+  top: -1348px;
+  z-index: 95;
+}
+
+.etc{
+  background-image: url(https://s3.amazonaws.com/myfangate.com/brosafari/etc.png);
+  width: 158px;
+  height: 360px;
+  left: 103px;
+  top: -1791px;
+  z-index: 95;
+}
+
+.craze{
+  background-image: url(https://s3.amazonaws.com/myfangate.com/brosafari/craze.png);
+  width: 98px;
+  height: 374px;
+  left: 30px;
+  top: -2134px;
+  z-index: 94;
+}
+
+.thuglife{
+  background-image: url(https://s3.amazonaws.com/myfangate.com/brosafari/thuglife.png);
+  width: 445px;
+  height: 370px;
+  left: 185px;
+  top: -2540px;
+  z-index: 93;
+}
