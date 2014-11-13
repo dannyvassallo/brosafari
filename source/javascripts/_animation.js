@@ -1,3 +1,4 @@
+
 // PEOPLE ANIMATION FUNCTION //
 
 function people(el, animclass){
@@ -10,17 +11,19 @@ function people(el, animclass){
   });
 }
 
+// TEXT ANIM FUNCTIONS //
 
-// TITLE //
-
-$('.title').mouseenter(function(){
-  $( this ).addClass('pulse');
+function buttons(el, animclass){
+$( el ).mouseenter(function(){
+  $( this ).addClass( animclass );
 });
-
-$('.title').mouseleave(function(){
-  $( this ).removeClass('pulse');
+$( el ).mouseleave(function(){
+  $( this ).removeClass( animclass );
 });
+}
 
+// RUN //
+// people //
 people('.mc', 'tossing');
 people('.ufo', 'tossing');
 people('.ape', 'tossing');
@@ -28,3 +31,12 @@ people('.crn', 'tossing');
 people('.etc', 'tossing');
 people('.craze', 'tossing');
 people('.thuglife', 'tossing');
+
+// buttons //
+buttons('.crazelogo', 'pulse');
+buttons('.title', 'pulse');
+buttons('.mclogo', 'pulse');
+buttons('.etclogo', 'pulse');
+buttons('.apelogo', 'pulse');
+buttons('.crnlogo', 'pulse');
+buttons('.ufologo', 'pulse');

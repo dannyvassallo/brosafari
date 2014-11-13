@@ -1,3 +1,9 @@
+/***********************************************/
+/***********************************************/
+/* ©2014 Dan Vassallo @ Trendsetter Marketing */
+/**********************************************/
+/***********************************************/
+
 body {
   background-color: #181759;
 }
@@ -15,7 +21,7 @@ body {
   }
 }
 
-
+// SPRITES
 .dog,
 .title,
 .trash,
@@ -26,25 +32,34 @@ body {
 .etc,
 .craze,
 .thuglife,
-.pig{
+.pig,
+.crazelogo,
+.mclogo,
+.etclogo,
+.apelogo,
+.crnlogo,
+.ufologo,
+.diffuser,
+.fire,
+.turtle,
+.chicken,
+.glass,
+.sblink{
   position: relative;
   cursor: pointer;
 }
-
 .dog{
   top: 300px;
   left: 510px;
   width: 120px;
   height: 130px;
 }
-
 .pig{
   top: -3370px;
   left: 210px;
   width: 120px;
   height: 130px;
 }
-
 .title{
   background-image: url(https://s3.amazonaws.com/myfangate.com/brosafari/tourtitle.png);
   width: 709px;
@@ -55,7 +70,6 @@ body {
   left: 20px;
   z-index: 99;
 }
-
 .trash{
   background-image: url(https://s3.amazonaws.com/myfangate.com/brosafari/trash.png);
   z-index: 98;
@@ -65,7 +79,6 @@ body {
   top: 455px;
   z-index: 98;
 }
-
 .mc{
   background-image: url(https://s3.amazonaws.com/myfangate.com/brosafari/mc.png);
   width: 138px;
@@ -74,7 +87,6 @@ body {
   top: -52px;
   z-index: 97;
 }
-
 .ufo{
   background-image: url(https://s3.amazonaws.com/myfangate.com/brosafari/ufo.png);
   width: 150px;
@@ -83,7 +95,6 @@ body {
   top: -442px;
   z-index: 96;
 }
-
 .ape{
   background-image: url(https://s3.amazonaws.com/myfangate.com/brosafari/ape.png);
   width: 164px;
@@ -92,7 +103,6 @@ body {
   top: -935px;
   z-index: 95;
 }
-
 .crn{
   background-image: url(https://s3.amazonaws.com/myfangate.com/brosafari/crn.png);
   width: 141px;
@@ -101,7 +111,6 @@ body {
   top: -1348px;
   z-index: 95;
 }
-
 .etc{
   background-image: url(https://s3.amazonaws.com/myfangate.com/brosafari/etc.png);
   width: 158px;
@@ -110,7 +119,6 @@ body {
   top: -1791px;
   z-index: 95;
 }
-
 .craze{
   background-image: url(https://s3.amazonaws.com/myfangate.com/brosafari/craze.png);
   width: 98px;
@@ -119,7 +127,6 @@ body {
   top: -2134px;
   z-index: 94;
 }
-
 .thuglife{
   background-image: url(https://s3.amazonaws.com/myfangate.com/brosafari/thuglife.png);
   width: 445px;
@@ -127,4 +134,92 @@ body {
   left: 185px;
   top: -2540px;
   z-index: 93;
+}
+.crazelogo{
+  background-image: url(https://s3.amazonaws.com/myfangate.com/brosafari/crazelogo.png);
+  width: 257px;
+  height: 140px;
+  left: 42px;
+  top: -2573px;
+  z-index: 100;
+}
+.mclogo{
+  background-image: url(https://s3.amazonaws.com/myfangate.com/brosafari/mclogo.png);
+  width: 190px;
+  height: 53px;
+  left: 661px;
+  top: -2591px;
+  z-index: 100;
+}
+.etclogo{
+  background-image: url(https://s3.amazonaws.com/myfangate.com/brosafari/etclogo.png);
+  width: 279px;
+  height: 69px;
+  left: 312px;
+  top: -2747px;
+  z-index: 100;
+}
+.apelogo{
+  background-image: url(https://s3.amazonaws.com/myfangate.com/brosafari/apelogo.png);
+  width: 175px;
+  height: 84px;
+  left: 297px;
+  top: -2729px;
+  z-index: 100;
+}
+.crnlogo{
+  background-image: url(https://s3.amazonaws.com/myfangate.com/brosafari/crnlogo.png);
+  width: 163px;
+  height: 71px;
+  left: 125px;
+  top: -2808px;
+  z-index: 100;
+}
+.ufologo{
+  background-image: url(https://s3.amazonaws.com/myfangate.com/brosafari/ufologo.png);
+  width: 145px;
+  height: 44px;
+  left: 488px;
+  top: -2865px;
+  z-index: 100;
+}
+.diffuser{
+  width: 30px;
+  height: 80px;
+  left: 288px;
+  top: -3020px;
+  z-index: 120;
+}
+.fire{
+  top: -3820px;
+  left: 295px;
+  width: 120px;
+  height: 130px;
+}
+.turtle{
+  top: -4150px;
+  left: 545px;
+  width: 120px;
+  height: 130px;
+}
+.chicken{
+  top: -3380px;
+  left: 778px;
+  width: 120px;
+  height: 130px;
+  z-index: 120;
+}
+.glass{
+  top: -4000px;
+  left: 578px;
+  width: 90px;
+  height: 115px;
+  z-index: 120;
+}
+.sblink{
+  top: -4430px;
+  left: 368px;
+  width: 190px;
+  height: 80px;
+  z-index: 120;
 }
