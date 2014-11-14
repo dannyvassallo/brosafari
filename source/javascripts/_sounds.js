@@ -1,11 +1,12 @@
+
 // FUNCTION //
+
 var audiotypes={
     "mp3": "audio/mpeg",
     "mp4": "audio/mp4",
     "ogg": "audio/ogg",
     "wav": "audio/wav"
 }
-
 function ss_soundbits(sound){
     var audio_element = document.createElement('audio')
     if (audio_element.canPlayType){
