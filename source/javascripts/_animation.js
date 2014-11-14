@@ -22,6 +22,17 @@ $( el ).mouseleave(function(){
 });
 }
 
+// Tour Button //
+function tButton(el){
+  $( el ).mouseenter(function(){
+    $( this ).animate({ "left": "-=10px" }, "fast" );
+  });
+
+  $( el ).mouseleave(function(){
+    $( this ).animate({ "left": "+=10px" }, "fast" );
+  });
+}
+
 // RUN //
 // people //
 people('.mc', 'tossing');
@@ -40,3 +51,5 @@ buttons('.etclogo', 'pulse');
 buttons('.apelogo', 'pulse');
 buttons('.crnlogo', 'pulse');
 buttons('.ufologo', 'pulse');
+
+tButton('.tourbutton');
