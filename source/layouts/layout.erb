@@ -15,6 +15,7 @@
   
   <body class="<%= page_classes %>">
     <%= yield %>
+    <%= partial "imageloader" %>
     <%= partial "modals" %>
     <%= javascript_include_tag  "all" %>
   </body>
