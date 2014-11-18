@@ -1,0 +1,20 @@
+#emailModal{
+  text-align: center;
+  margin: 0 auto;
+  #navigation-table{
+    margin: 0 auto;
+  }
+}
+
+input {
+    border:2px solid #dadada;
+    border-radius:7px;
+    padding:5px;
+    font-size: 23px !important;
+}
+
+.error { 
+    outline:none;
+    border-color: red;
+    box-shadow:0 0 10px red;
+}
