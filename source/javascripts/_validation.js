@@ -12,6 +12,12 @@ function validateForm() {
         $('#entry_193196971').addClass('error');
         return false;
     }
+    else if ( $('#entry_404726157').val() == "" ){
+        alert("Please select a tour date.");
+        //ga('send', 'event',  'Form', 'Error', 'EmailAddress');
+        $('#entry_404726157').addClass('error');
+        return false;
+    }
     else{
         submitted=true;
     }

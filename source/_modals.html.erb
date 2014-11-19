@@ -51,14 +51,14 @@
 <div class="modal fade" id="emailModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true" onload="modalCenter();">
   <div class="modal-dialog">
       <div class="modal-content">
-        <h1>WIN THINGS DUDES!</h1> 
-        <img src=<%= lorem.image('400x400') %>>
         <!-- Form -->
         <div class="ss-form">
+        <h1>Already Have Tickets?</h1> 
+        <h4>Enter Below for A chance to win a meet and greet!</h4>
         <script type="text/javascript">var submitted=false;</script>
         <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"     
         onload="if(submitted) {$('.ss-form').html('<center><h1>Thank you for entering!</h1>').css('height','inherit');ga('send', 'event',  'Form', 'Complete', 'Success');}"></iframe>
-        <h2>Submit your Email address to enter</h2> 
+        <label>Email</label> 
             <form id="ss-form" action="https://docs.google.com/a/trendsettermarketing.net/forms/d/18Wpa538QEGWRTzTSPfqsFlRLZUUXuVs6ti8nU0NU__Q/formResponse" method="post" target="hidden_iframe" 
         onsubmit="return validateForm()">
             <ol role="list" class="ss-question-list" style="padding-left: 0">
@@ -69,6 +69,12 @@
               <div class="error-message" id="1524149796_errorMessage"></div>
               <br>
               </div></div></div>
+              <label>Tour Date</label>
+              <br>
+              <div class="ss-form-question errorbox-good" role="listitem">
+              <div dir="ltr" class="ss-item  ss-select"><div class="ss-form-entry">
+              <select name="entry.404726157" id="entry_404726157" aria-label="Tour Date  "><option value=""></option>
+              <option value="CHICAGO, IL">CHICAGO, IL</option> <option value="MINNEAPOLIS, MN">MINNEAPOLIS, MN</option> <option value="FARGO, ND">FARGO, ND</option> <option value="URBANA, IL">URBANA, IL</option> <option value="NASHVILLE, TN">NASHVILLE, TN</option> <option value="INDIANAPOLIS, IN">INDIANAPOLIS, IN</option> <option value="DETROIT, MI">DETROIT, MI</option> <option value="MILWAUKEE, WI">MILWAUKEE, WI</option> <option value="COLUMBIA, SC">COLUMBIA, SC</option> <option value="CHARLOTTE, NC">CHARLOTTE, NC</option> <option value="KNOXVILLE, TN">KNOXVILLE, TN</option> <option value="BALTIMORE, MD">BALTIMORE, MD</option> <option value="NORFOLK, VA">NORFOLK, VA</option> <option value="BUFFALO, NY">BUFFALO, NY</option> <option value="SYRACUSE, NY">SYRACUSE, NY</option> <option value="BOSTON, MA">BOSTON, MA</option> <option value="HARTFORD, CT">HARTFORD, CT</option> <option value="NEW YORK CITY, NY">NEW YORK CITY, NY</option> <option value="ATLANTIC CITY, NJ">ATLANTIC CITY, NJ</option></select>
               </div>
               <input type="hidden" name="draftResponse" value="[,,&quot;-5468418597670844003&quot;]
               ">

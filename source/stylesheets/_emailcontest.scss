@@ -13,8 +13,21 @@ input {
     font-size: 23px !important;
 }
 
+select{
+    border:2px solid #dadada;
+    border-radius:7px;
+    padding:5px;
+    font-size: 18px !important;
+    margin-bottom: 30px;
+}
+
 .error { 
     outline:none;
     border-color: red;
     box-shadow:0 0 10px red;
+}
+
+.btn-default, .btn-default:hover, .btn-default:active{
+  background-color: #569400 !important;
+  color: #fff !important;
 }
