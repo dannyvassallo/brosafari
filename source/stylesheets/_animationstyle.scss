@@ -46,7 +46,8 @@ body {
 .chicken,
 .glass,
 .sblink,
-.tourbutton{
+.tourbutton,
+.starburst{
   position: relative;
   cursor: pointer;
 }
@@ -268,4 +269,14 @@ body {
   height: 30px;
   border-radius: 15px;
   width: 0%;
+}
+
+
+.starburst{
+  background-image: url(https://s3.amazonaws.com/myfangate.com/brosafari/starburst.png);
+  height: 226px;
+  width: 259px;
+  top: -4820px;
+  left: -30px;
+  cursor: default;
 }
