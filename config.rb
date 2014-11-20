@@ -1,3 +1,13 @@
+activate :dotenv
+
+configure :development do
+  activate :dotenv, env: '.env.development'
+end
+
+configure :build do
+  activate :dotenv, env: '.env.build'
+end
+
 ###
 # Compass
 ###
