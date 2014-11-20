@@ -36,6 +36,7 @@ var fire  = ss_soundbits( prefix + "fire.mp3", prefix + "fire.wav", prefix + "fi
 var rocket  = ss_soundbits( prefix + "rocket.mp3", prefix + "rocket.wav", prefix + "rocket.ogg");
 var burp  = ss_soundbits( prefix + "burp.mp3", prefix + "burp.wav", prefix + "burp.ogg");
 var glass  = ss_soundbits( prefix + "glass.mp3", prefix + "glass.wav", prefix + "glass.ogg");
+var buzzer  = ss_soundbits( prefix + "buzzer.mp3", prefix + "buzzer.wav", prefix + "buzzer.ogg");
  
  
 // CLICK EVENTS
@@ -46,3 +47,13 @@ $('.fire').click(function(){ fire.playclip(); });
 $('.turtle').click(function(){ rocket.playclip(); }); 
 $('.chicken').click(function(){ burp.playclip(); }); 
 $('.glass').click(function(){ glass.playclip(); }); 
+
+
+// NON CONTEST
+
+$('.craze').click(function(){ buzzer.playclip(); }); 
+$('.etc').click(function(){ buzzer.playclip(); }); 
+$('.crn').click(function(){ buzzer.playclip(); }); 
+$('.ape').click(function(){ buzzer.playclip(); }); 
+$('.mc').click(function(){ buzzer.playclip(); }); 
+$('.mclogo').click(function(){ buzzer.playclip(); }); 
