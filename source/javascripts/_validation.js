@@ -19,7 +19,7 @@ function validateForm() {
         return false;
     }
     else{
-        submitted=true;
+        window.submitted=true;
     }
 }
 
@@ -44,9 +44,9 @@ $(function(){
 //Add - onkeyup="nospaces(this)" to input fields
 
 function nospaces(t){
-if(t.value.match(/\s/g)){
-ga('send', 'event',  'Form', 'Error', 'Spaces');
-alertify.error('Sorry, no spaces allowed!');
-t.value=t.value.replace(/\s/g,'');
-}
+    if(t.value.match(/\s/g)){
+        ga('send', 'event',  'Form', 'Error', 'Spaces');
+        alert('Sorry, no spaces allowed!');
+        t.value=t.value.replace(/\s/g,'');
+    }
 }

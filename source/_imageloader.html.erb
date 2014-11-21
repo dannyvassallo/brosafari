@@ -1,4 +1,16 @@
 <div class="imageloader">
+<script>
+function incrementLoader(){
+  var totalEl = $(".imageloader > img").length
+  var percentage = 806 / totalEl
+  $('.actualbar').css({"width":"+="+percentage+"px"});
+  
+  if ($('.actualbar').width() >= 799){
+    $('.loading-animation').delay( 400 ).fadeOut( 1000 );
+  }
+
+}
+</script>
   <img src="https://s3.amazonaws.com/myfangate.com/brosafari/background.jpg" onload="incrementLoader();"/>
   <img src="https://s3.amazonaws.com/myfangate.com/brosafari/tourtitle.png" onload="incrementLoader();"/>
   <img src="https://s3.amazonaws.com/myfangate.com/brosafari/trash.png" onload="incrementLoader();"/>

@@ -1,10 +1,34 @@
-
+function checkBrowser(){
+    var c=navigator.userAgent.search("Chrome");
+    var f=navigator.userAgent.search("Firefox");
+    var m8=navigator.userAgent.search("MSIE 8.0");
+    var m9=navigator.userAgent.search("MSIE 9.0");
+    window.brwsr = null;
+    if (c>-1){
+        brwsr = "Chrome";
+    }
+    else if(f>-1){
+        brwsr = "Firefox";
+    }else if (m9>-1){
+        brwsr = "MSIE 9.0";
+    }else if (m8>-1){
+        brwsr ="MSIE 8.0";
+    }
+    else{
+      $('.loading-animation').css({"display":"none"});
+    }
+    return brwsr;
+}
 // PEOPLE ANIMATION FUNCTION //
 
 function people(el, animclass){
+  checkBrowser();
   $( el ).mouseenter(function(){
     $( this ).animate({ "top": "-=10px" }, "fast" ).addClass( animclass );
-    $( this ).addClass( 'shadowfilter2' );  
+    if(brwsr == "Firefox"){}
+    else{
+    $( this ).addClass( 'shadowfilter2' ); 
+    } 
   });
 
   $( el ).mouseleave(function(){
@@ -14,9 +38,13 @@ function people(el, animclass){
 }
 
 function people2(el, animclass){
+  checkBrowser();
   $( el ).mouseenter(function(){
     $( this ).animate({ "top": "-=10px" }, "fast" ).addClass( animclass );
-    $( this ).addClass( 'shadowfilter' );  
+    if(brwsr == "Firefox"){}
+    else{
+    $( this ).addClass( 'shadowfilter' ); 
+    } 
   });
 
   $( el ).mouseleave(function(){
@@ -28,9 +56,13 @@ function people2(el, animclass){
 // TEXT ANIM FUNCTIONS //
 
 function buttons(el, animclass){
+  checkBrowser();
 $( el ).mouseenter(function(){
   $( this ).addClass( animclass );
+  if(brwsr == "Firefox"){}
+  else{
   $( this ).addClass( 'shadowfilter2' );  
+  }
 });
 $( el ).mouseleave(function(){
   $( this ).removeClass( animclass );
@@ -39,9 +71,13 @@ $( el ).mouseleave(function(){
 }
 
 function buttons2(el, animclass){
+  checkBrowser();
 $( el ).mouseenter(function(){
   $( this ).addClass( animclass );
+  if(brwsr == "Firefox"){}
+  else{
   $( this ).addClass( 'shadowfilter' );  
+  }
 });
 $( el ).mouseleave(function(){
   $( this ).removeClass( animclass );
