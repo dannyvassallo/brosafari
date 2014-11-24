@@ -1,113 +1,79 @@
-<div class="modal fade" id="crazeModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
-  <div class="modal-dialog">
-      <div class="modal-content">
-        <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/26123&amp;color=0066cc&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
-      </div>
-  </div>
+<div class="modals">
+
+<div class="soundcloud" id="crazeModal">
+  <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/26123&amp;color=0066cc&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
 </div>
 
-<div class="modal fade" id="etcModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
-  <div class="modal-dialog">
-      <div class="modal-content">
-        <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/103897&amp;color=0066cc&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
-      </div>
-  </div>
+<div class="soundcloud" id="etcModal">
+  <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/103897&amp;color=0066cc&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
 </div>
 
-<div class="modal fade" id="crnModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
-  <div class="modal-dialog">
-      <div class="modal-content">
-        <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/7238955&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
-      </div>
-  </div>
+<div class="soundcloud" id="crnModal">
+  <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/7238955&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
 </div>
 
-<div class="modal fade" id="ufoModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
-  <div class="modal-dialog">
-      <div class="modal-content">
-          <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/56601&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
-      </div>
-  </div>
+<div class="soundcloud" id="ufoModal">
+  <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/56601&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
 </div>
 
-<div class="modal fade" id="apeModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
-  <div class="modal-dialog">
-      <div class="modal-content">
-          <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/290693&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
-      </div>
-  </div>
+<div class="soundcloud" id="apeModal">
+  <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/290693&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
 </div>
 
-<div class="modal fade" id="tourdateModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-          <%= partial "tourdates" %>
-        </div>
-    </div>
-  </div>
+<%= partial "tourdates" %>
 
 <!-- EMAIL ENTRY -->
 
-<div class="modal fade" id="emailModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
-  <div class="modal-dialog">
-      <div class="modal-content">
-        <!-- Form -->
-        <div class="ss-form">
-        <h1>Already Have Tickets?</h1> 
-        <h4>Enter Below for A chance to win a meet and greet!</h4>
-        <script type="text/javascript">window.submitted=false;</script>
-        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"     
-        onload="if(window.submitted) {$('.ss-form').html('<center><h1>Thank you for entering!</h1>').css('height','inherit');ga('send', 'event',  'Form', 'Complete', 'Success');}"></iframe>
-        <label>Email</label> 
-            <form id="ss-form" action="https://docs.google.com/a/trendsettermarketing.net/forms/d/18Wpa538QEGWRTzTSPfqsFlRLZUUXuVs6ti8nU0NU__Q/formResponse" method="post" target="hidden_iframe" 
-        onsubmit="return validateForm()">
-            <ol role="list" class="ss-question-list" style="padding-left: 0">
-              <div class="form-group">
-              <div class="ss-form-question errorbox-good" role="listitem">
-              <div dir="ltr" class="ss-item  ss-text"><div class="ss-form-entry">
-              <input type="text" name="entry.193196971" value="" class="ss-q-short form-control" id="entry_193196971" dir="auto" aria-label="Email Address:  " title="">
-              <div class="error-message" id="1524149796_errorMessage"></div>
-              <br>
-              </div></div></div>
-              <label>Tour Date</label>
-              <br>
-              <div class="ss-form-question errorbox-good" role="listitem">
-              <div dir="ltr" class="ss-item  ss-select"><div class="ss-form-entry">
-              <select name="entry.404726157" id="entry_404726157" aria-label="Tour Date  "><option value=""></option>
-              <option value="CHICAGO, IL">CHICAGO, IL</option> <option value="MINNEAPOLIS, MN">MINNEAPOLIS, MN</option> <option value="FARGO, ND">FARGO, ND</option> <option value="URBANA, IL">URBANA, IL</option> <option value="NASHVILLE, TN">NASHVILLE, TN</option> <option value="INDIANAPOLIS, IN">INDIANAPOLIS, IN</option> <option value="DETROIT, MI">DETROIT, MI</option> <option value="MILWAUKEE, WI">MILWAUKEE, WI</option> <option value="COLUMBIA, SC">COLUMBIA, SC</option> <option value="CHARLOTTE, NC">CHARLOTTE, NC</option> <option value="KNOXVILLE, TN">KNOXVILLE, TN</option> <option value="BALTIMORE, MD">BALTIMORE, MD</option> <option value="NORFOLK, VA">NORFOLK, VA</option> <option value="BUFFALO, NY">BUFFALO, NY</option> <option value="SYRACUSE, NY">SYRACUSE, NY</option> <option value="BOSTON, MA">BOSTON, MA</option> <option value="HARTFORD, CT">HARTFORD, CT</option> <option value="NEW YORK CITY, NY">NEW YORK CITY, NY</option> <option value="ATLANTIC CITY, NJ">ATLANTIC CITY, NJ</option></select>
-              </div>
-              <input type="hidden" name="draftResponse" value="[,,&quot;-5468418597670844003&quot;]
-              ">
-              <input type="hidden" name="pageHistory" value="0">
-              <input type="hidden" name="fbzx" value="-5468418597670844003">
-              <div class="ss-item ss-navigate"><table id="navigation-table"><tbody><tr><td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
-              <input type="submit" name="submit" value="Submit" class="btn btn-default" id="ss-submit">
-              </td>
-
-              </tr></tbody></table></div>
-            </ol>
-          </form>
+<div  id="emailModal" >
+  <!-- Form -->
+  <div class="ss-form">
+  <h1>Already Have Tickets?</h1> 
+  <h4>Enter Below for A chance to win a meet and greet!</h4>
+  <script type="text/javascript">window.submitted=false;</script>
+  <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"     
+  onload="if(window.submitted) {$('.ss-form').html('<center><h1>Thank you for entering!</h1>').css('height','inherit');ga('send', 'event',  'Form', 'Complete', 'Success');}"></iframe>
+  <label>Email</label> 
+      <form id="ss-form" action="https://docs.google.com/a/trendsettermarketing.net/forms/d/18Wpa538QEGWRTzTSPfqsFlRLZUUXuVs6ti8nU0NU__Q/formResponse" method="post" target="hidden_iframe" 
+  onsubmit="return validateForm()">
+      <ol role="list" class="ss-question-list" style="padding-left: 0">
+        <div class="form-group">
+        <div class="ss-form-question errorbox-good" role="listitem">
+        <div dir="ltr" class="ss-item  ss-text"><div class="ss-form-entry">
+        <input type="text" name="entry.193196971" value="" class="ss-q-short form-control" id="entry_193196971" dir="auto" aria-label="Email Address:  " title="">
+        <div class="error-message" id="1524149796_errorMessage"></div>
+        <br>
+        </div></div></div>
+        <label>Tour Date</label>
+        <br>
+        <div class="ss-form-question errorbox-good" role="listitem">
+        <div dir="ltr" class="ss-item  ss-select"><div class="ss-form-entry">
+        <select name="entry.404726157" id="entry_404726157" aria-label="Tour Date  "><option value=""></option>
+        <option value="CHICAGO, IL">CHICAGO, IL</option> <option value="MINNEAPOLIS, MN">MINNEAPOLIS, MN</option> <option value="FARGO, ND">FARGO, ND</option> <option value="URBANA, IL">URBANA, IL</option> <option value="NASHVILLE, TN">NASHVILLE, TN</option> <option value="INDIANAPOLIS, IN">INDIANAPOLIS, IN</option> <option value="DETROIT, MI">DETROIT, MI</option> <option value="MILWAUKEE, WI">MILWAUKEE, WI</option> <option value="COLUMBIA, SC">COLUMBIA, SC</option> <option value="CHARLOTTE, NC">CHARLOTTE, NC</option> <option value="KNOXVILLE, TN">KNOXVILLE, TN</option> <option value="BALTIMORE, MD">BALTIMORE, MD</option> <option value="NORFOLK, VA">NORFOLK, VA</option> <option value="BUFFALO, NY">BUFFALO, NY</option> <option value="SYRACUSE, NY">SYRACUSE, NY</option> <option value="BOSTON, MA">BOSTON, MA</option> <option value="HARTFORD, CT">HARTFORD, CT</option> <option value="NEW YORK CITY, NY">NEW YORK CITY, NY</option> <option value="ATLANTIC CITY, NJ">ATLANTIC CITY, NJ</option></select>
         </div>
-        <!-- End Form -->
-      </div>
+        <input type="hidden" name="draftResponse" value="[,,&quot;-5468418597670844003&quot;]
+        ">
+        <input type="hidden" name="pageHistory" value="0">
+        <input type="hidden" name="fbzx" value="-5468418597670844003">
+        <div class="ss-item ss-navigate"><table id="navigation-table"><tbody><tr><td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
+        <input type="submit" name="submit" value="Submit" class="btn btn-default" id="ss-submit">
+        </td>
+
+        </tr></tbody></table></div>
+      </ol>
+    </form>
   </div>
+  <!-- End Form -->
 </div>
 
 <!-- Video Modal  -->
-<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="video-content modal-content">
-      <iframe width="560" height="315" src="//www.youtube.com/embed/nT4lgD5gOMI" frameborder="0" allowfullscreen></iframe>
-    </div>
-  </div>
+<div id="videoModal">
+  <iframe width="560" height="315" src="//www.youtube.com/embed/nT4lgD5gOMI" frameborder="0" allowfullscreen></iframe>
 </div>
 
 
 <!-- Contest Modal -->
-<div class="modal fade" id="contestModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true" onload="">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div id="fangate-iframe-container"></div><script src="https://www.myfangate.com/ci/script/autoiframe/container?container=fangate-iframe-container&src=https://www.myfangate.com/ci/tab/data/2351?framed"></script>
-    </div>
-  </div>
+<div id="contestModal">
+  <div id="fangate-iframe-container"></div><script src="https://www.myfangate.com/ci/script/autoiframe/container?container=fangate-iframe-container&src=https://www.myfangate.com/ci/tab/data/2351?framed"></script>
+</div>
+
 </div>
